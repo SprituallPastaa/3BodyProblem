@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-26T16:28:59.051053713+02:00",
+  "data": {
+    "PROJECT_NAME": {
+      "location": {
+        "uri": "file:///home/emilh/workspace/physics_sim/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 4
+          },
+          "end": {
+            "line": 0,
+            "character": 16
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt",
+      "is_function": false
+    },
+    "CMAKE_CXX_STANDARD": {
+      "location": {
+        "uri": "file:///home/emilh/workspace/physics_sim/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 4,
+            "character": 4
+          },
+          "end": {
+            "line": 4,
+            "character": 22
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt",
+      "is_function": false
+    },
+    "CMAKE_CXX_STANDARD_REQUIRED": {
+      "location": {
+        "uri": "file:///home/emilh/workspace/physics_sim/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 5,
+            "character": 4
+          },
+          "end": {
+            "line": 5,
+            "character": 31
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt",
+      "is_function": false
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/emilh/workspace/physics_sim",
+  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/application.cpp.o -c /home/emilh/workspace/physics_sim/src/application.cpp",
+  "file": "/home/emilh/workspace/physics_sim/src/application.cpp",
+  "output": "CMakeFiles/pastasim.dir/src/application.cpp.o"
+},
+{
+  "directory": "/home/emilh/workspace/physics_sim",
+  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/main.cpp.o -c /home/emilh/workspace/physics_sim/src/main.cpp",
+  "file": "/home/emilh/workspace/physics_sim/src/main.cpp",
+  "output": "CMakeFiles/pastasim.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/emilh/workspace/physics_sim",
+  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_engine_device.cpp",
+  "file": "/home/emilh/workspace/physics_sim/src/sim_engine_device.cpp",
+  "output": "CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o"
+},
+{
+  "directory": "/home/emilh/workspace/physics_sim",
+  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_pipeline.cpp",
+  "file": "/home/emilh/workspace/physics_sim/src/sim_pipeline.cpp",
+  "output": "CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o"
+},
+{
+  "directory": "/home/emilh/workspace/physics_sim",
+  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/sim_window.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_window.cpp",
+  "file": "/home/emilh/workspace/physics_sim/src/sim_window.cpp",
+  "output": "CMakeFiles/pastasim.dir/src/sim_window.cpp.o"
+}
+]

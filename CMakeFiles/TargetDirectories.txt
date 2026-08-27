@@ -1,0 +1,3 @@
+/home/emilh/workspace/physics_sim/CMakeFiles/pastasim.dir
+/home/emilh/workspace/physics_sim/CMakeFiles/edit_cache.dir
+/home/emilh/workspace/physics_sim/CMakeFiles/rebuild_cache.dir

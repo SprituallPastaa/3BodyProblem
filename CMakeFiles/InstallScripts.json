@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/emilh/workspace/physics_sim/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

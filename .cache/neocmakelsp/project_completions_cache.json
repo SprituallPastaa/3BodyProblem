@@ -1,0 +1,19 @@
+{
+  "date": "2026-08-26T16:28:59.051034579+02:00",
+  "data": {
+    "/home/emilh/workspace/physics_sim/CMakeLists.txt": [
+      {
+        "label": "CMAKE_CXX_STANDARD",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt"
+      },
+      {
+        "label": "CMAKE_CXX_STANDARD_REQUIRED",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/pastasim.dir/link.d CMakeFiles/pastasim.dir/src/application.cpp.o CMakeFiles/pastasim.dir/src/main.cpp.o CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o CMakeFiles/pastasim.dir/src/sim_window.cpp.o -o pastasim  /usr/lib/libvulkan.so /usr/lib/libglfw.so.3.5 /usr/lib/libglm.a
