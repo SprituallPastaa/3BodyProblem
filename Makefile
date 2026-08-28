@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/sbin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/sbin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emilh/workspace/physics_sim
+CMAKE_SOURCE_DIR = /mnt/c/Users/0810emihal/workspace/physics_sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emilh/workspace/physics_sim
+CMAKE_BINARY_DIR = /mnt/c/Users/0810emihal/workspace/physics_sim
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/emilh/workspace/physics_sim
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/sbin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,18 +78,63 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/sbin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/sbin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/sbin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/sbin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/sbin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/sbin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/sbin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emilh/workspace/physics_sim/CMakeFiles /home/emilh/workspace/physics_sim//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/0810emihal/workspace/physics_sim/CMakeFiles /mnt/c/Users/0810emihal/workspace/physics_sim//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emilh/workspace/physics_sim/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/0810emihal/workspace/physics_sim/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,7 +158,7 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/emilh/workspace/physics_sim/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /mnt/c/Users/0810emihal/workspace/physics_sim/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -129,6 +174,45 @@ pastasim: cmake_check_build_system
 pastasim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/build
 .PHONY : pastasim/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/CMakeFiles/uninstall.dir/build.make vendor/glfw/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named update_mappings
+
+# Build rule for target.
+update_mappings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
+.PHONY : update_mappings
+
+# fast build rule for target.
+update_mappings/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/update_mappings.dir/build.make vendor/glfw/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
 
 src/application.o: src/application.cpp.o
 .PHONY : src/application.o
@@ -177,6 +261,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/my_engine_swap_chain.o: src/my_engine_swap_chain.cpp.o
+.PHONY : src/my_engine_swap_chain.o
+
+# target to build an object file
+src/my_engine_swap_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o
+.PHONY : src/my_engine_swap_chain.cpp.o
+
+src/my_engine_swap_chain.i: src/my_engine_swap_chain.cpp.i
+.PHONY : src/my_engine_swap_chain.i
+
+# target to preprocess a source file
+src/my_engine_swap_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.i
+.PHONY : src/my_engine_swap_chain.cpp.i
+
+src/my_engine_swap_chain.s: src/my_engine_swap_chain.cpp.s
+.PHONY : src/my_engine_swap_chain.s
+
+# target to generate assembly for a file
+src/my_engine_swap_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.s
+.PHONY : src/my_engine_swap_chain.cpp.s
 
 src/sim_engine_device.o: src/sim_engine_device.cpp.o
 .PHONY : src/sim_engine_device.o
@@ -257,7 +365,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... uninstall"
+	@echo "... update_mappings"
+	@echo "... glfw"
 	@echo "... pastasim"
 	@echo "... src/application.o"
 	@echo "... src/application.i"
@@ -265,6 +380,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/my_engine_swap_chain.o"
+	@echo "... src/my_engine_swap_chain.i"
+	@echo "... src/my_engine_swap_chain.s"
 	@echo "... src/sim_engine_device.o"
 	@echo "... src/sim_engine_device.i"
 	@echo "... src/sim_engine_device.s"
@@ -285,7 +403,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/emilh/workspace/physics_sim/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /mnt/c/Users/0810emihal/workspace/physics_sim/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

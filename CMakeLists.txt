@@ -13,19 +13,19 @@ find_package(Vulkan REQUIRED)
 # find_package(glm REQUIRED)
 
 add_executable(pastasim
-  ${SOURCES}
+		${SOURCES}
 )
 
 add_subdirectory(vendor/glfw)
 
 target_include_directories(pastasim
-  PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+		PRIVATE
+				${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 target_link_libraries(pastasim PRIVATE
-  Vulkan::Vulkan
-  glfw
-  # glm::glm
+		Vulkan::Vulkan
+		glfw
+		# glm::glm
 )
 

@@ -1,32 +1,194 @@
 [
 {
-  "directory": "/home/emilh/workspace/physics_sim",
-  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/application.cpp.o -c /home/emilh/workspace/physics_sim/src/application.cpp",
-  "file": "/home/emilh/workspace/physics_sim/src/application.cpp",
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim",
+  "command": "/usr/sbin/c++  -I/mnt/c/Users/0810emihal/workspace/physics_sim/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -std=gnu++23 -o CMakeFiles/pastasim.dir/src/application.cpp.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/src/application.cpp",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/src/application.cpp",
   "output": "CMakeFiles/pastasim.dir/src/application.cpp.o"
 },
 {
-  "directory": "/home/emilh/workspace/physics_sim",
-  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/main.cpp.o -c /home/emilh/workspace/physics_sim/src/main.cpp",
-  "file": "/home/emilh/workspace/physics_sim/src/main.cpp",
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim",
+  "command": "/usr/sbin/c++  -I/mnt/c/Users/0810emihal/workspace/physics_sim/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -std=gnu++23 -o CMakeFiles/pastasim.dir/src/main.cpp.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/src/main.cpp",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/src/main.cpp",
   "output": "CMakeFiles/pastasim.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/emilh/workspace/physics_sim",
-  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_engine_device.cpp",
-  "file": "/home/emilh/workspace/physics_sim/src/sim_engine_device.cpp",
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim",
+  "command": "/usr/sbin/c++  -I/mnt/c/Users/0810emihal/workspace/physics_sim/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -std=gnu++23 -o CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/src/my_engine_swap_chain.cpp",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/src/my_engine_swap_chain.cpp",
+  "output": "CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim",
+  "command": "/usr/sbin/c++  -I/mnt/c/Users/0810emihal/workspace/physics_sim/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -std=gnu++23 -o CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/src/sim_engine_device.cpp",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/src/sim_engine_device.cpp",
   "output": "CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o"
 },
 {
-  "directory": "/home/emilh/workspace/physics_sim",
-  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_pipeline.cpp",
-  "file": "/home/emilh/workspace/physics_sim/src/sim_pipeline.cpp",
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim",
+  "command": "/usr/sbin/c++  -I/mnt/c/Users/0810emihal/workspace/physics_sim/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -std=gnu++23 -o CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/src/sim_pipeline.cpp",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/src/sim_pipeline.cpp",
   "output": "CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o"
 },
 {
-  "directory": "/home/emilh/workspace/physics_sim",
-  "command": "/usr/bin/c++  -I/home/emilh/workspace/physics_sim/include -std=gnu++26 -o CMakeFiles/pastasim.dir/src/sim_window.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_window.cpp",
-  "file": "/home/emilh/workspace/physics_sim/src/sim_window.cpp",
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim",
+  "command": "/usr/sbin/c++  -I/mnt/c/Users/0810emihal/workspace/physics_sim/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -std=gnu++23 -o CMakeFiles/pastasim.dir/src/sim_window.cpp.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/src/sim_window.cpp",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/src/sim_window.cpp",
   "output": "CMakeFiles/pastasim.dir/src/sim_window.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/context.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/context.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/init.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/init.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/input.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/input.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/monitor.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/monitor.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/platform.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/platform.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/vulkan.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/vulkan.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/window.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/window.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/egl_context.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/egl_context.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/osmesa_context.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/osmesa_context.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/null_init.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/null_init.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/null_monitor.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/null_monitor.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/null_window.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/null_window.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/null_joystick.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/null_joystick.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/posix_module.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/posix_module.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_time.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/posix_time.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/posix_time.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/posix_thread.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/posix_thread.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_init.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/x11_init.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/x11_init.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/x11_monitor.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/x11_monitor.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_window.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/x11_window.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/x11_window.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/xkb_unicode.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/xkb_unicode.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/glx_context.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/glx_context.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/glx_context.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/wl_init.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/wl_init.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/wl_init.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/wl_monitor.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/wl_monitor.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/wl_monitor.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/wl_window.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/wl_window.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/wl_window.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/linux_joystick.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/linux_joystick.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+},
+{
+  "directory": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src",
+  "command": "/usr/sbin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/include -I/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_poll.c.o -c /mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/posix_poll.c",
+  "file": "/mnt/c/Users/0810emihal/workspace/physics_sim/vendor/glfw/src/posix_poll.c",
+  "output": "vendor/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o"
 }
 ]
