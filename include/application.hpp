@@ -1,9 +1,10 @@
 #pragma once
 
+#include "my_engine_swap_chain.hpp"
 #include "sim_engine_device.hpp"
+#include "sim_model.hpp"
 #include "sim_pipeline.hpp"
 #include "sim_window.hpp"
-#include "my_engine_swap_chain.hpp"
 
 // std
 #include <memory>
@@ -24,16 +25,21 @@ public:
   void run();
 
 private:
-void createPipelineLayout();
-void createPipeline();
-void createCommandBuffers();
-void drawFrame();
+  void loadModels();
+  void createPipelineLayout();
+  void createPipeline();
+  void createCommandBuffers();
+  void freeCommandBuffers();
+  void drawFrame();
+  void recreateSwapChain();
+  void recordCommandBuffer(int imageIndex);
 
   SimWindow simWindow{WIDTH, HEIGHT, "Hello Vulkan!!!"};
   SimEngineDevice simEngineDevice{simWindow};
-  MyEngineSwapChain simSwapChain{simEngineDevice, simWindow.getExtent()};
+  std::unique_ptr<MyEngineSwapChain> simSwapChain;
   std::unique_ptr<SimPipeline> simPipeline;
   VkPipelineLayout pipelineLayout;
   std::vector<VkCommandBuffer> commandBuffers;
+  std::unique_ptr<SimModel> simModel;
 };
 } // namespace Sim
