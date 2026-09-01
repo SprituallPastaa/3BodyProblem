@@ -3,21 +3,30 @@
 #include "sim_model.hpp"
 #include "sim_pipeline.hpp"
 #include <GLFW/glfw3.h>
+#include <glm/ext/vector_float2.hpp>
+
+// libs
+#define GLM_FORCE_RADIANS
+#define GLM_FORCE_DEPTH_ZERO_TO_ONE
+#include <glm/glm.hpp>
 
 // std
-#include <algorithm>
 #include <array>
 #include <cassert>
 #include <cstdint>
 #include <glm/detail/qualifier.hpp>
 #include <memory>
-#include <numbers>
-#include <ranges>
+#include <print>
 #include <stdexcept>
 #include <vector>
 #include <vulkan/vulkan_core.h>
 
 namespace Sim {
+
+struct SimplePushConstantData {
+  glm::vec2 offset;
+  alignas(16) glm::vec3 color;
+};
 
 FirstApp::FirstApp() {
   loadModels();
@@ -35,6 +44,8 @@ void FirstApp::run() {
     glfwPollEvents();
     drawFrame();
     vkDeviceWaitIdle(simEngineDevice.device());
+    // std::println("{}",
+    // simEngineDevice.properties.limits.maxPushConstantsSize);
   }
 }
 
@@ -79,12 +90,19 @@ void FirstApp::loadModels() {
 }
 
 void FirstApp::createPipelineLayout() {
+
+  VkPushConstantRange pushConstantRange{};
+  pushConstantRange.stageFlags =
+      VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT;
+  pushConstantRange.offset = 0;
+  pushConstantRange.size = sizeof(SimplePushConstantData);
+
   VkPipelineLayoutCreateInfo pipelineLayoutInfo{};
   pipelineLayoutInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
   pipelineLayoutInfo.setLayoutCount = 0;
   pipelineLayoutInfo.pSetLayouts = nullptr;
-  pipelineLayoutInfo.pushConstantRangeCount = 0;
-  pipelineLayoutInfo.pPushConstantRanges = nullptr;
+  pipelineLayoutInfo.pushConstantRangeCount = 1;
+  pipelineLayoutInfo.pPushConstantRanges = &pushConstantRange;
   if (vkCreatePipelineLayout(simEngineDevice.device(), &pipelineLayoutInfo,
                              nullptr, &pipelineLayout) != VK_SUCCESS) {
     throw std::runtime_error("failed to create pipeline layout");
@@ -151,6 +169,8 @@ void FirstApp::freeCommandBuffers() {
 }
 
 void FirstApp::recordCommandBuffer(int imageIndex) {
+  static int frame = 0;
+  frame = (frame + 1) % 30000;
 
   VkCommandBufferBeginInfo beginInfo{};
   beginInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;
@@ -170,7 +190,7 @@ void FirstApp::recordCommandBuffer(int imageIndex) {
   renderPassInfo.renderArea.extent = simSwapChain->getSwapChainExtent();
 
   std::array<VkClearValue, 2> clearValues{};
-  clearValues[0].color = {0.1f, 0.1f, 0.1f, 1.0f};
+  clearValues[0].color = {0.01f, 0.01f, 0.01f, 1.0f};
   clearValues[1].depthStencil = {1.0f, 0};
   renderPassInfo.clearValueCount = static_cast<uint32_t>(clearValues.size());
   renderPassInfo.pClearValues = clearValues.data();
@@ -192,7 +212,18 @@ void FirstApp::recordCommandBuffer(int imageIndex) {
 
   simPipeline->bind(commandBuffers[imageIndex]);
   simModel->bind(commandBuffers[imageIndex]);
-  simModel->draw(commandBuffers[imageIndex]);
+
+  for (int j = 0; j < 4; j++) {
+    SimplePushConstantData push{};
+    push.offset = {-0.5f + (frame / 60.0f) * 0.002f, -0.4f + j * 0.25};
+    push.color = {0.0f, 0.0f, 0.2f + 0.2f * j};
+
+    vkCmdPushConstants(commandBuffers[imageIndex], pipelineLayout,
+                       VK_SHADER_STAGE_FRAGMENT_BIT |
+                           VK_SHADER_STAGE_VERTEX_BIT,
+                       0, sizeof(SimplePushConstantData), &push);
+    simModel->draw(commandBuffers[imageIndex]);
+  }
 
   vkCmdEndRenderPass(commandBuffers[imageIndex]);
 
