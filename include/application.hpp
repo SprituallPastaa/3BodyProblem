@@ -1,14 +1,15 @@
 #pragma once
 
+#include "game_object.hpp"
 #include "my_engine_swap_chain.hpp"
 #include "sim_engine_device.hpp"
-#include "sim_model.hpp"
 #include "sim_pipeline.hpp"
 #include "sim_window.hpp"
 
 // std
 #include <memory>
 #include <vector>
+#include <vulkan/vulkan_core.h>
 
 namespace Sim {
 class FirstApp {
@@ -25,7 +26,7 @@ public:
   void run();
 
 private:
-  void loadModels();
+  void loadGameObjects();
   void createPipelineLayout();
   void createPipeline();
   void createCommandBuffers();
@@ -33,6 +34,7 @@ private:
   void drawFrame();
   void recreateSwapChain();
   void recordCommandBuffer(int imageIndex);
+  void renderGameObjects(VkCommandBuffer commandBuffer);
 
   SimWindow simWindow{WIDTH, HEIGHT, "Hello Vulkan!!!"};
   SimEngineDevice simEngineDevice{simWindow};
@@ -40,6 +42,6 @@ private:
   std::unique_ptr<SimPipeline> simPipeline;
   VkPipelineLayout pipelineLayout;
   std::vector<VkCommandBuffer> commandBuffers;
-  std::unique_ptr<SimModel> simModel;
+  std::vector<SimGameObject> gameObjects;
 };
 } // namespace Sim

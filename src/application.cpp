@@ -1,16 +1,20 @@
 #include "application.hpp"
+#include "game_object.hpp"
 #include "my_engine_swap_chain.hpp"
 #include "sim_model.hpp"
 #include "sim_pipeline.hpp"
-#include <GLFW/glfw3.h>
-#include <glm/ext/vector_float2.hpp>
+#include <glm/common.hpp>
 
 // libs
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
+#include <GLFW/glfw3.h>
+#include <glm/ext/vector_float2.hpp>
 #include <glm/glm.hpp>
+#include <glm/gtc/constants.hpp>
 
 // std
+#include <algorithm>
 #include <array>
 #include <cassert>
 #include <cstdint>
@@ -24,12 +28,13 @@
 namespace Sim {
 
 struct SimplePushConstantData {
+  glm::mat2 transform{1.f};
   glm::vec2 offset;
   alignas(16) glm::vec3 color;
 };
 
 FirstApp::FirstApp() {
-  loadModels();
+  loadGameObjects();
   createPipelineLayout();
   recreateSwapChain();
   createCommandBuffers();
@@ -77,7 +82,7 @@ void sierpinsky(const std::vector<SimModel::Vertex> &inVertices, int depth,
   sierpinsky({m2, m1, inVertices[2]}, depth - 1, outVertices); // Sub-triangle 3
 }
 
-void FirstApp::loadModels() {
+void FirstApp::loadGameObjects() {
   std::vector<SimModel::Vertex> inVertices{
       {{0.0f, -0.5f}}, {{0.5f, 0.5f}}, {{-0.5f, 0.5f}}};
   std::vector<SimModel::Vertex> colorVertices{
@@ -86,7 +91,16 @@ void FirstApp::loadModels() {
       {{-0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}}};
   std::vector<SimModel::Vertex> outVertices;
   sierpinsky(inVertices, 5, outVertices);
-  simModel = std::make_unique<SimModel>(simEngineDevice, colorVertices);
+  auto simModel = std::make_shared<SimModel>(simEngineDevice, colorVertices);
+
+  auto triangle = SimGameObject::createGameObject();
+  triangle.model = simModel;
+  triangle.color = {.1f, .8f, .1f};
+  triangle.transform2D.translation.x = .2f;
+  triangle.transform2D.scale = {2.f, 0.5f};
+  triangle.transform2D.rotation = .25f * glm::two_pi<float>();
+
+  gameObjects.push_back(std::move(triangle));
 }
 
 void FirstApp::createPipelineLayout() {
@@ -169,9 +183,6 @@ void FirstApp::freeCommandBuffers() {
 }
 
 void FirstApp::recordCommandBuffer(int imageIndex) {
-  static int frame = 0;
-  frame = (frame + 1) % 30000;
-
   VkCommandBufferBeginInfo beginInfo{};
   beginInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;
 
@@ -210,25 +221,32 @@ void FirstApp::recordCommandBuffer(int imageIndex) {
   vkCmdSetViewport(commandBuffers[imageIndex], 0, 1, &viewport);
   vkCmdSetScissor(commandBuffers[imageIndex], 0, 1, &scissor);
 
-  simPipeline->bind(commandBuffers[imageIndex]);
-  simModel->bind(commandBuffers[imageIndex]);
-
-  for (int j = 0; j < 4; j++) {
-    SimplePushConstantData push{};
-    push.offset = {-0.5f + (frame / 60.0f) * 0.002f, -0.4f + j * 0.25};
-    push.color = {0.0f, 0.0f, 0.2f + 0.2f * j};
-
-    vkCmdPushConstants(commandBuffers[imageIndex], pipelineLayout,
-                       VK_SHADER_STAGE_FRAGMENT_BIT |
-                           VK_SHADER_STAGE_VERTEX_BIT,
-                       0, sizeof(SimplePushConstantData), &push);
-    simModel->draw(commandBuffers[imageIndex]);
-  }
-
+  renderGameObjects(commandBuffers[imageIndex]);
   vkCmdEndRenderPass(commandBuffers[imageIndex]);
 
   if (vkEndCommandBuffer(commandBuffers[imageIndex]) != VK_SUCCESS) {
     throw std::runtime_error("Failed to record command buffer");
+  }
+}
+
+void FirstApp::renderGameObjects(VkCommandBuffer commandBuffer) {
+  simPipeline->bind(commandBuffer);
+
+  for (auto &obj : gameObjects) {
+    obj.transform2D.rotation =
+        glm::mod(obj.transform2D.rotation + .01f, glm::two_pi<float>());
+
+    SimplePushConstantData push{};
+    push.offset = {obj.transform2D.translation};
+    push.color = {obj.color};
+    push.transform = {obj.transform2D.mat2()};
+
+    vkCmdPushConstants(commandBuffer, pipelineLayout,
+                       VK_SHADER_STAGE_FRAGMENT_BIT |
+                           VK_SHADER_STAGE_VERTEX_BIT,
+                       0, sizeof(SimplePushConstantData), &push);
+    obj.model->bind(commandBuffer);
+    obj.model->draw(commandBuffer);
   }
 }
 
