@@ -4,8 +4,12 @@ pastasim: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   CMakeFiles/pastasim.dir/src/application.cpp.o \
   CMakeFiles/pastasim.dir/src/main.cpp.o \
+  CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o \
+  CMakeFiles/pastasim.dir/src/render_system.cpp.o \
   CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o \
+  CMakeFiles/pastasim.dir/src/sim_model.cpp.o \
   CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o \
+  CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o \
   CMakeFiles/pastasim.dir/src/sim_window.cpp.o \
   /usr/lib/libvulkan.so \
   /usr/lib/libglfw.so.3.5 \
@@ -52,9 +56,17 @@ CMakeFiles/pastasim.dir/src/application.cpp.o:
 
 CMakeFiles/pastasim.dir/src/main.cpp.o:
 
+CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o:
+
+CMakeFiles/pastasim.dir/src/render_system.cpp.o:
+
 CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o:
 
+CMakeFiles/pastasim.dir/src/sim_model.cpp.o:
+
 CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o:
+
+CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o:
 
 CMakeFiles/pastasim.dir/src/sim_window.cpp.o:
 

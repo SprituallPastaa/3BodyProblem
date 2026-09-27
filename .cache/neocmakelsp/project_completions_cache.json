@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-26T16:28:59.051034579+02:00",
+  "date": "2026-09-09T12:09:45.042275859+02:00",
   "data": {
     "/home/emilh/workspace/physics_sim/CMakeLists.txt": [
       {
@@ -9,10 +9,382 @@
         "documentation": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt"
       },
       {
+        "label": "CMAKE_EXPORT_COMPILE_COMMANDS",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt"
+      },
+      {
         "label": "CMAKE_CXX_STANDARD_REQUIRED",
         "kind": 12,
         "detail": "Value",
         "documentation": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt"
+      },
+      {
+        "label": "Vulkan_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: Vulkan"
+      },
+      {
+        "label": "Vulkan_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: Vulkan"
+      },
+      {
+        "label": "glfw3_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: glfw3"
+      },
+      {
+        "label": "glfw3_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: glfw3"
+      },
+      {
+        "label": "find_dependency",
+        "kind": 3,
+        "detail": "Command",
+        "documentation": "defined command from CMakeFindDependencyMacro.cmake\n.rst:\nCMakeFindDependencyMacro\n------------------------\n\nThis module provides a command implemented as a macro that finds dependency\nfor a package.\n\nLoad this module in a CMake package configuration file with:\n\n.. code-block:: cmake\n  :caption: ``FooConfig.cmake`` or ``foo-config.cmake``:\n\n  include(CMakeFindDependencyMacro)\n\n.. note::\n\n  This module is designed to be used in a :ref:`Package Configuration File\n  <Config File Packages>` (``<PackageName>Config.cmake``).\n\nCommands\n^^^^^^^^\n\nThis module provides the following command:\n\n.. command:: find_dependency\n\n  The ``find_dependency()`` macro wraps a :command:`find_package` call for\n  a package dependency:\n\n  .. code-block:: cmake\n\n    find_dependency(<dep> [...])\n\n  It is designed to be used in a\n  :ref:`Package Configuration File <Config File Packages>`\n  (``<PackageName>Config.cmake``).  ``find_dependency`` forwards the correct\n  parameters for ``QUIET`` and ``REQUIRED`` which were passed to\n  the original :command:`find_package` call.  Any additional arguments\n  specified are forwarded to :command:`find_package`.\n\n  If the dependency could not be found it sets an informative diagnostic\n  message and calls :command:`return` to end processing of the calling\n  package configuration file and return to the :command:`find_package`\n  command that loaded it.\n\n  .. note::\n\n    The call to :command:`return` makes this macro unsuitable to call\n    from :ref:`Find Modules`.\n\nPackage Dependency Search Optimizations\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nIf ``find_dependency`` is called with arguments identical to a previous\ncall in the same directory, perhaps due to diamond-shaped package\ndependencies, the underlying call to :command:`find_package` is optimized\nout.  This optimization is important to support large package dependency\ngraphs while avoiding a combinatorial explosion of repeated searches.\nHowever, the heuristic cannot account for ambient variables that\naffect package behavior, such as ``<PackageName>_USE_STATIC_LIBS``,\noffered by some packages.  Therefore package configuration files should\navoid setting such variables before their calls to ``find_dependency``.\n\n.. versionchanged:: 3.15\n  Previously, the underlying call to :command:`find_package` was always\n  optimized out if the package had already been found.  CMake 3.15\n  removed the optimization to support cases in which ``find_dependency``\n  call arguments request different components.\n\n.. versionchanged:: 3.26\n  The pre-3.15 optimization was restored, but with the above-described\n  heuristic to account for varying ``find_dependency`` call arguments.\n\n#"
+      },
+      {
+        "label": "__find_dependency_common",
+        "kind": 3,
+        "detail": "Function",
+        "documentation": "defined macro\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "__find_dependency_no_return",
+        "kind": 3,
+        "detail": "Function",
+        "documentation": "defined macro\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "find_dependency",
+        "kind": 3,
+        "detail": "Function",
+        "documentation": "defined macro\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "cmake_fd_quiet_arg",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "cmake_fd_quiet_arg",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "cmake_fd_required_arg",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "cmake_fd_required_arg",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "${dep}_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: ${dep}"
+      },
+      {
+        "label": "${dep}_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: ${dep}"
+      },
+      {
+        "label": "\"_CMAKE_${dep}_${cmake_fd_call_hash}_FOUND\"",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "${dep}_FOUND",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "${CMAKE_FIND_PACKAGE_NAME}_NOT_FOUND_MESSAGE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "${CMAKE_FIND_PACKAGE_NAME}_FOUND",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "${CMAKE_FIND_PACKAGE_NAME}_NOT_FOUND_MESSAGE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "${CMAKE_FIND_PACKAGE_NAME}_FOUND",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+      },
+      {
+        "label": "CMAKE_IMPORT_FILE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets-none.cmake\n\nCommands may need to know the format version."
+      },
+      {
+        "label": "CMAKE_IMPORT_FILE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets-none.cmake\n\nCommands beyond this point should not need to know the version."
+      },
+      {
+        "label": "CMAKE_IMPORT_FILE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets.cmake\n\nCommands may need to know the format version."
+      },
+      {
+        "label": "_cmake_targets_defined",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets.cmake\n\nProtect against multiple inclusion, which would fail when already imported targets are added once more."
+      },
+      {
+        "label": "_cmake_targets_not_defined",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets.cmake"
+      },
+      {
+        "label": "_cmake_expected_targets",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets.cmake"
+      },
+      {
+        "label": "_IMPORT_PREFIX",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets.cmake"
+      },
+      {
+        "label": "_IMPORT_PREFIX",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets.cmake"
+      },
+      {
+        "label": "_IMPORT_PREFIX",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets.cmake\n\nCleanup temporary variables."
+      },
+      {
+        "label": "CMAKE_IMPORT_FILE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3Targets.cmake\n\nCommands beyond this point should not need to know the version."
+      },
+      {
+        "label": "PACKAGE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "CVF_VERSION_MAJOR",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "CVF_VERSION_MAJOR",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_EXACT",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_UNSUITABLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+      },
+      {
+        "label": "glm_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: glm"
+      },
+      {
+        "label": "glm_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: glm"
+      },
+      {
+        "label": "CMAKE_IMPORT_FILE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake\n\nCommands may need to know the format version."
+      },
+      {
+        "label": "_cmake_targets_defined",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake\n\nProtect against multiple inclusion, which would fail when already imported targets are added once more."
+      },
+      {
+        "label": "_cmake_targets_not_defined",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake"
+      },
+      {
+        "label": "_cmake_expected_targets",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake"
+      },
+      {
+        "label": "_IMPORT_PREFIX",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake\n\nThe installation prefix configured by this project."
+      },
+      {
+        "label": "_IMPORT_PREFIX",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake\n\nCleanup temporary variables."
+      },
+      {
+        "label": "CMAKE_IMPORT_FILE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake\n\nCommands beyond this point should not need to know the version."
+      },
+      {
+        "label": "PACKAGE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_COMPATIBLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_EXACT",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake"
+      },
+      {
+        "label": "PACKAGE_VERSION_UNSUITABLE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake"
+      },
+      {
+        "label": "CMAKE_IMPORT_FILE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig-release.cmake\n\nCommands may need to know the format version."
+      },
+      {
+        "label": "CMAKE_IMPORT_FILE_VERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig-release.cmake\n\nCommands beyond this point should not need to know the version."
       }
     ]
   }

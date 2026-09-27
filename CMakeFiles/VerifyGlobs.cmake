@@ -6,8 +6,12 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/emilh/workspace/physics
 set(OLD_GLOB
   "/home/emilh/workspace/physics_sim/src/application.cpp"
   "/home/emilh/workspace/physics_sim/src/main.cpp"
+  "/home/emilh/workspace/physics_sim/src/my_engine_swap_chain.cpp"
+  "/home/emilh/workspace/physics_sim/src/render_system.cpp"
   "/home/emilh/workspace/physics_sim/src/sim_engine_device.cpp"
+  "/home/emilh/workspace/physics_sim/src/sim_model.cpp"
   "/home/emilh/workspace/physics_sim/src/sim_pipeline.cpp"
+  "/home/emilh/workspace/physics_sim/src/sim_renderer.cpp"
   "/home/emilh/workspace/physics_sim/src/sim_window.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

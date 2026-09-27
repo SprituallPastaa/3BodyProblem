@@ -1,21 +1,174 @@
 {
-  "date": "2026-08-26T16:28:59.051053713+02:00",
+  "date": "2026-09-09T12:09:45.057791423+02:00",
   "data": {
-    "PROJECT_NAME": {
+    "CMAKE_IMPORT_FILE_VERSION": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glm/glmConfig-release.cmake",
+        "range": {
+          "start": {
+            "line": 18,
+            "character": 4
+          },
+          "end": {
+            "line": 18,
+            "character": 29
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig-release.cmake\n\nCommands beyond this point should not need to know the version.",
+      "is_function": false
+    },
+    "CMAKE_CXX_STANDARD_REQUIRED": {
       "location": {
         "uri": "file:///home/emilh/workspace/physics_sim/CMakeLists.txt",
         "range": {
           "start": {
-            "line": 0,
+            "line": 6,
             "character": 4
           },
           "end": {
-            "line": 0,
-            "character": 16
+            "line": 6,
+            "character": 31
           }
         }
       },
       "document_info": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt",
+      "is_function": false
+    },
+    "CVF_VERSION_MAJOR": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake",
+        "range": {
+          "start": {
+            "line": 23,
+            "character": 8
+          },
+          "end": {
+            "line": 23,
+            "character": 25
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake",
+      "is_function": false
+    },
+    "CMAKE_EXPORT_COMPILE_COMMANDS": {
+      "location": {
+        "uri": "file:///home/emilh/workspace/physics_sim/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 5,
+            "character": 4
+          },
+          "end": {
+            "line": 5,
+            "character": 33
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt",
+      "is_function": false
+    },
+    "_cmake_expected_targets": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glm/glmConfig.cmake",
+        "range": {
+          "start": {
+            "line": 20,
+            "character": 4
+          },
+          "end": {
+            "line": 20,
+            "character": 27
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake",
+      "is_function": false
+    },
+    "PACKAGE_VERSION_COMPATIBLE": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glm/glmConfigVersion.cmake",
+        "range": {
+          "start": {
+            "line": 24,
+            "character": 8
+          },
+          "end": {
+            "line": 24,
+            "character": 34
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake",
+      "is_function": false
+    },
+    "PACKAGE_VERSION": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glm/glmConfigVersion.cmake",
+        "range": {
+          "start": {
+            "line": 40,
+            "character": 6
+          },
+          "end": {
+            "line": 40,
+            "character": 21
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake",
+      "is_function": false
+    },
+    "PACKAGE_VERSION_EXACT": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glm/glmConfigVersion.cmake",
+        "range": {
+          "start": {
+            "line": 26,
+            "character": 10
+          },
+          "end": {
+            "line": 26,
+            "character": 31
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake",
+      "is_function": false
+    },
+    "PACKAGE_VERSION_UNSUITABLE": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glm/glmConfigVersion.cmake",
+        "range": {
+          "start": {
+            "line": 41,
+            "character": 6
+          },
+          "end": {
+            "line": 41,
+            "character": 32
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfigVersion.cmake",
+      "is_function": false
+    },
+    "_cmake_targets_defined": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glm/glmConfig.cmake",
+        "range": {
+          "start": {
+            "line": 18,
+            "character": 4
+          },
+          "end": {
+            "line": 18,
+            "character": 26
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake\n\nProtect against multiple inclusion, which would fail when already imported targets are added once more.",
       "is_function": false
     },
     "CMAKE_CXX_STANDARD": {
@@ -35,17 +188,51 @@
       "document_info": "defined variable\nfrom: /home/emilh/workspace/physics_sim/CMakeLists.txt",
       "is_function": false
     },
-    "CMAKE_CXX_STANDARD_REQUIRED": {
+    "_IMPORT_PREFIX": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glm/glmConfig.cmake",
+        "range": {
+          "start": {
+            "line": 74,
+            "character": 4
+          },
+          "end": {
+            "line": 74,
+            "character": 18
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake\n\nCleanup temporary variables.",
+      "is_function": false
+    },
+    "_cmake_targets_not_defined": {
+      "location": {
+        "uri": "file:///usr/lib/cmake/glm/glmConfig.cmake",
+        "range": {
+          "start": {
+            "line": 19,
+            "character": 4
+          },
+          "end": {
+            "line": 19,
+            "character": 30
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /usr/lib/cmake/glm/glmConfig.cmake",
+      "is_function": false
+    },
+    "PROJECT_NAME": {
       "location": {
         "uri": "file:///home/emilh/workspace/physics_sim/CMakeLists.txt",
         "range": {
           "start": {
-            "line": 5,
+            "line": 0,
             "character": 4
           },
           "end": {
-            "line": 5,
-            "character": 31
+            "line": 0,
+            "character": 16
           }
         }
       },

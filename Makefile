@@ -178,6 +178,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/my_engine_swap_chain.o: src/my_engine_swap_chain.cpp.o
+.PHONY : src/my_engine_swap_chain.o
+
+# target to build an object file
+src/my_engine_swap_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o
+.PHONY : src/my_engine_swap_chain.cpp.o
+
+src/my_engine_swap_chain.i: src/my_engine_swap_chain.cpp.i
+.PHONY : src/my_engine_swap_chain.i
+
+# target to preprocess a source file
+src/my_engine_swap_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.i
+.PHONY : src/my_engine_swap_chain.cpp.i
+
+src/my_engine_swap_chain.s: src/my_engine_swap_chain.cpp.s
+.PHONY : src/my_engine_swap_chain.s
+
+# target to generate assembly for a file
+src/my_engine_swap_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.s
+.PHONY : src/my_engine_swap_chain.cpp.s
+
+src/render_system.o: src/render_system.cpp.o
+.PHONY : src/render_system.o
+
+# target to build an object file
+src/render_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/render_system.cpp.o
+.PHONY : src/render_system.cpp.o
+
+src/render_system.i: src/render_system.cpp.i
+.PHONY : src/render_system.i
+
+# target to preprocess a source file
+src/render_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/render_system.cpp.i
+.PHONY : src/render_system.cpp.i
+
+src/render_system.s: src/render_system.cpp.s
+.PHONY : src/render_system.s
+
+# target to generate assembly for a file
+src/render_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/render_system.cpp.s
+.PHONY : src/render_system.cpp.s
+
 src/sim_engine_device.o: src/sim_engine_device.cpp.o
 .PHONY : src/sim_engine_device.o
 
@@ -202,6 +250,30 @@ src/sim_engine_device.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.s
 .PHONY : src/sim_engine_device.cpp.s
 
+src/sim_model.o: src/sim_model.cpp.o
+.PHONY : src/sim_model.o
+
+# target to build an object file
+src/sim_model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_model.cpp.o
+.PHONY : src/sim_model.cpp.o
+
+src/sim_model.i: src/sim_model.cpp.i
+.PHONY : src/sim_model.i
+
+# target to preprocess a source file
+src/sim_model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_model.cpp.i
+.PHONY : src/sim_model.cpp.i
+
+src/sim_model.s: src/sim_model.cpp.s
+.PHONY : src/sim_model.s
+
+# target to generate assembly for a file
+src/sim_model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_model.cpp.s
+.PHONY : src/sim_model.cpp.s
+
 src/sim_pipeline.o: src/sim_pipeline.cpp.o
 .PHONY : src/sim_pipeline.o
 
@@ -225,6 +297,30 @@ src/sim_pipeline.s: src/sim_pipeline.cpp.s
 src/sim_pipeline.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.s
 .PHONY : src/sim_pipeline.cpp.s
+
+src/sim_renderer.o: src/sim_renderer.cpp.o
+.PHONY : src/sim_renderer.o
+
+# target to build an object file
+src/sim_renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o
+.PHONY : src/sim_renderer.cpp.o
+
+src/sim_renderer.i: src/sim_renderer.cpp.i
+.PHONY : src/sim_renderer.i
+
+# target to preprocess a source file
+src/sim_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_renderer.cpp.i
+.PHONY : src/sim_renderer.cpp.i
+
+src/sim_renderer.s: src/sim_renderer.cpp.s
+.PHONY : src/sim_renderer.s
+
+# target to generate assembly for a file
+src/sim_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_renderer.cpp.s
+.PHONY : src/sim_renderer.cpp.s
 
 src/sim_window.o: src/sim_window.cpp.o
 .PHONY : src/sim_window.o
@@ -265,12 +361,24 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/my_engine_swap_chain.o"
+	@echo "... src/my_engine_swap_chain.i"
+	@echo "... src/my_engine_swap_chain.s"
+	@echo "... src/render_system.o"
+	@echo "... src/render_system.i"
+	@echo "... src/render_system.s"
 	@echo "... src/sim_engine_device.o"
 	@echo "... src/sim_engine_device.i"
 	@echo "... src/sim_engine_device.s"
+	@echo "... src/sim_model.o"
+	@echo "... src/sim_model.i"
+	@echo "... src/sim_model.s"
 	@echo "... src/sim_pipeline.o"
 	@echo "... src/sim_pipeline.i"
 	@echo "... src/sim_pipeline.s"
+	@echo "... src/sim_renderer.o"
+	@echo "... src/sim_renderer.i"
+	@echo "... src/sim_renderer.s"
 	@echo "... src/sim_window.o"
 	@echo "... src/sim_window.i"
 	@echo "... src/sim_window.s"

@@ -11,9 +11,17 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.cpp")
 find_package(Vulkan REQUIRED)
 find_package(glfw3 3.3 REQUIRED)
 find_package(glm REQUIRED)
+find_program(bash bash)
 
 add_executable(pastasim
   ${SOURCES}
+)
+
+add_custom_command(
+  TARGET pastasim
+  PRE_BUILD
+  COMMAND bash
+  ARGS -c ./compile_shaders.sh
 )
 
 target_include_directories(pastasim

@@ -35,7 +35,7 @@ public:
 
   // Not copyable or movable
   SimEngineDevice(const SimEngineDevice &) = delete;
-  void operator=(const SimEngineDevice &) = delete;
+  SimEngineDevice &operator=(const SimEngineDevice &) = delete;
   SimEngineDevice(SimEngineDevice &&) = delete;
   SimEngineDevice &operator=(SimEngineDevice &&) = delete;
 

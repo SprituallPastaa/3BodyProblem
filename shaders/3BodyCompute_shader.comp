@@ -1,0 +1,63 @@
+// WARNING THIS IS AI CODE!!!!!
+// PLEASE REWRITE THIS ONCE YOU KNOW THINGS BETTER
+
+#version 450
+#extension GL_EXT_shader_explicit_arithmetic_types_float64 : enable
+
+layout(local_size_x = 1, local_size_y = 1, local_size_z = 1) in;
+
+struct Body {
+  dvec4 pos_mass; // x, y, z, mass
+  dvec4 vel_pad; // vx, vy, vz, padding
+};
+
+layout(std430, binding = 0) buffer BodyBuffer {
+  Body bodies[3];
+};
+
+layout(push_constant) uniform Params {
+  double base_dt;
+  uint substeps;
+  double G;
+  double eps2;
+} params;
+
+dvec3 compute_acceleration(dvec3 pos, uint self_idx) {
+  dvec3 accel = dvec3(0.0);
+  for (uint j = 0; j < 3; ++j) {
+    if (j == self_idx) continue;
+    dvec3 r = bodies[j].pos_mass.xyz - pos;
+    double dist2 = dot(r, r) + params.eps2;
+    double dist = sqrt(dist2);
+    accel += params.G * bodies[j].pos_mass.w * r / (dist2 * dist);
+  }
+  return accel;
+}
+
+void main() {
+  // Single thread updates all 3 bodies to avoid compute thread barriers
+  for (uint step = 0; step < params.substeps; ++step) {
+    dvec3 pos[3], vel[3], accel[3];
+
+    for (int i = 0; i < 3; ++i) {
+      pos[i] = bodies[i].pos_mass.xyz;
+      vel[i] = bodies[i].vel_pad.xyz;
+      accel[i] = compute_acceleration(pos[i], i);
+    }
+
+    // Velocity Verlet Integration
+    for (int i = 0; i < 3; ++i) {
+      vel[i] += 0.5 * params.base_dt * accel[i];
+      pos[i] += params.base_dt * vel[i];
+    }
+
+    for (int i = 0; i < 3; ++i) {
+      dvec3 new_accel = compute_acceleration(pos[i], i);
+      vel[i] += 0.5 * params.base_dt * new_accel;
+
+      // Commit updated states back to buffer
+      bodies[i].pos_mass.xyz = pos[i];
+      bodies[i].vel_pad.xyz = vel[i];
+    }
+  }
+}

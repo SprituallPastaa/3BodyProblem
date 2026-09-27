@@ -100,10 +100,38 @@ CMakeFiles/pastasim.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pastasim.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilh/workspace/physics_sim/src/main.cpp -o CMakeFiles/pastasim.dir/src/main.cpp.s
 
+CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o: CMakeFiles/pastasim.dir/flags.make
+CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o: src/my_engine_swap_chain.cpp
+CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o: CMakeFiles/pastasim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o -MF CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o.d -o CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o -c /home/emilh/workspace/physics_sim/src/my_engine_swap_chain.cpp
+
+CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilh/workspace/physics_sim/src/my_engine_swap_chain.cpp > CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.i
+
+CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilh/workspace/physics_sim/src/my_engine_swap_chain.cpp -o CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.s
+
+CMakeFiles/pastasim.dir/src/render_system.cpp.o: CMakeFiles/pastasim.dir/flags.make
+CMakeFiles/pastasim.dir/src/render_system.cpp.o: src/render_system.cpp
+CMakeFiles/pastasim.dir/src/render_system.cpp.o: CMakeFiles/pastasim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pastasim.dir/src/render_system.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pastasim.dir/src/render_system.cpp.o -MF CMakeFiles/pastasim.dir/src/render_system.cpp.o.d -o CMakeFiles/pastasim.dir/src/render_system.cpp.o -c /home/emilh/workspace/physics_sim/src/render_system.cpp
+
+CMakeFiles/pastasim.dir/src/render_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pastasim.dir/src/render_system.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilh/workspace/physics_sim/src/render_system.cpp > CMakeFiles/pastasim.dir/src/render_system.cpp.i
+
+CMakeFiles/pastasim.dir/src/render_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pastasim.dir/src/render_system.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilh/workspace/physics_sim/src/render_system.cpp -o CMakeFiles/pastasim.dir/src/render_system.cpp.s
+
 CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o: CMakeFiles/pastasim.dir/flags.make
 CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o: src/sim_engine_device.cpp
 CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o: CMakeFiles/pastasim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o -MF CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o.d -o CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_engine_device.cpp
 
 CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.i: cmake_force
@@ -114,10 +142,24 @@ CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilh/workspace/physics_sim/src/sim_engine_device.cpp -o CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.s
 
+CMakeFiles/pastasim.dir/src/sim_model.cpp.o: CMakeFiles/pastasim.dir/flags.make
+CMakeFiles/pastasim.dir/src/sim_model.cpp.o: src/sim_model.cpp
+CMakeFiles/pastasim.dir/src/sim_model.cpp.o: CMakeFiles/pastasim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pastasim.dir/src/sim_model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pastasim.dir/src/sim_model.cpp.o -MF CMakeFiles/pastasim.dir/src/sim_model.cpp.o.d -o CMakeFiles/pastasim.dir/src/sim_model.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_model.cpp
+
+CMakeFiles/pastasim.dir/src/sim_model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pastasim.dir/src/sim_model.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilh/workspace/physics_sim/src/sim_model.cpp > CMakeFiles/pastasim.dir/src/sim_model.cpp.i
+
+CMakeFiles/pastasim.dir/src/sim_model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pastasim.dir/src/sim_model.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilh/workspace/physics_sim/src/sim_model.cpp -o CMakeFiles/pastasim.dir/src/sim_model.cpp.s
+
 CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o: CMakeFiles/pastasim.dir/flags.make
 CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o: src/sim_pipeline.cpp
 CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o: CMakeFiles/pastasim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o -MF CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o.d -o CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_pipeline.cpp
 
 CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.i: cmake_force
@@ -128,10 +170,24 @@ CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilh/workspace/physics_sim/src/sim_pipeline.cpp -o CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.s
 
+CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o: CMakeFiles/pastasim.dir/flags.make
+CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o: src/sim_renderer.cpp
+CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o: CMakeFiles/pastasim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o -MF CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o.d -o CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_renderer.cpp
+
+CMakeFiles/pastasim.dir/src/sim_renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pastasim.dir/src/sim_renderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilh/workspace/physics_sim/src/sim_renderer.cpp > CMakeFiles/pastasim.dir/src/sim_renderer.cpp.i
+
+CMakeFiles/pastasim.dir/src/sim_renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pastasim.dir/src/sim_renderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilh/workspace/physics_sim/src/sim_renderer.cpp -o CMakeFiles/pastasim.dir/src/sim_renderer.cpp.s
+
 CMakeFiles/pastasim.dir/src/sim_window.cpp.o: CMakeFiles/pastasim.dir/flags.make
 CMakeFiles/pastasim.dir/src/sim_window.cpp.o: src/sim_window.cpp
 CMakeFiles/pastasim.dir/src/sim_window.cpp.o: CMakeFiles/pastasim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pastasim.dir/src/sim_window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pastasim.dir/src/sim_window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pastasim.dir/src/sim_window.cpp.o -MF CMakeFiles/pastasim.dir/src/sim_window.cpp.o.d -o CMakeFiles/pastasim.dir/src/sim_window.cpp.o -c /home/emilh/workspace/physics_sim/src/sim_window.cpp
 
 CMakeFiles/pastasim.dir/src/sim_window.cpp.i: cmake_force
@@ -146,8 +202,12 @@ CMakeFiles/pastasim.dir/src/sim_window.cpp.s: cmake_force
 pastasim_OBJECTS = \
 "CMakeFiles/pastasim.dir/src/application.cpp.o" \
 "CMakeFiles/pastasim.dir/src/main.cpp.o" \
+"CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o" \
+"CMakeFiles/pastasim.dir/src/render_system.cpp.o" \
 "CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o" \
+"CMakeFiles/pastasim.dir/src/sim_model.cpp.o" \
 "CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o" \
+"CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o" \
 "CMakeFiles/pastasim.dir/src/sim_window.cpp.o"
 
 # External object files for target pastasim
@@ -155,8 +215,12 @@ pastasim_EXTERNAL_OBJECTS =
 
 pastasim: CMakeFiles/pastasim.dir/src/application.cpp.o
 pastasim: CMakeFiles/pastasim.dir/src/main.cpp.o
+pastasim: CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o
+pastasim: CMakeFiles/pastasim.dir/src/render_system.cpp.o
 pastasim: CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o
+pastasim: CMakeFiles/pastasim.dir/src/sim_model.cpp.o
 pastasim: CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o
+pastasim: CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o
 pastasim: CMakeFiles/pastasim.dir/src/sim_window.cpp.o
 pastasim: CMakeFiles/pastasim.dir/build.make
 pastasim: CMakeFiles/pastasim.dir/compiler_depend.ts
@@ -164,7 +228,8 @@ pastasim: /usr/lib/libvulkan.so
 pastasim: /usr/lib/libglfw.so.3.5
 pastasim: /usr/lib/libglm.a
 pastasim: CMakeFiles/pastasim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable pastasim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/emilh/workspace/physics_sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable pastasim"
+	bash -c ./compile_shaders.sh
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pastasim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

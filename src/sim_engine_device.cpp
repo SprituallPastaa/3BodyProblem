@@ -164,13 +164,13 @@ void SimEngineDevice::createLogicalDevice() {
 
   // might not really be necessary anymore because device specific validation
   // layers have been deprecated
-  if (enableValidationLayers) {
-    createInfo.enabledLayerCount =
-        static_cast<uint32_t>(validationLayers.size());
-    createInfo.ppEnabledLayerNames = validationLayers.data();
-  } else {
-    createInfo.enabledLayerCount = 0;
-  }
+  // if (enableValidationLayers) {
+  //   createInfo.enabledLayerCount =
+  //       static_cast<uint32_t>(validationLayers.size());
+  //   createInfo.ppEnabledLayerNames = validationLayers.data();
+  // } else {
+  //   createInfo.enabledLayerCount = 0;
+  // }
 
   if (vkCreateDevice(physicalDevice, &createInfo, nullptr, &device_) !=
       VK_SUCCESS) {
@@ -290,21 +290,21 @@ void SimEngineDevice::hasGflwRequiredInstanceExtensions() {
   vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount,
                                          extensions.data());
 
-  std::cout << "available extensions:" << std::endl;
-  std::unordered_set<std::string> available;
-  for (const auto &extension : extensions) {
-    std::cout << "\t" << extension.extensionName << std::endl;
-    available.insert(extension.extensionName);
-  }
+  // std::cout << "available extensions:" << std::endl;
+  // std::unordered_set<std::string> available;
+  // for (const auto &extension : extensions) {
+  //   std::cout << "\t" << extension.extensionName << std::endl;
+  //   available.insert(extension.extensionName);
+  // }
 
-  std::cout << "required extensions:" << std::endl;
-  auto requiredExtensions = getRequiredExtensions();
-  for (const auto &required : requiredExtensions) {
-    std::cout << "\t" << required << std::endl;
-    if (available.find(required) == available.end()) {
-      throw std::runtime_error("Missing required glfw extension");
-    }
-  }
+  // std::cout << "required extensions:" << std::endl;
+  // auto requiredExtensions = getRequiredExtensions();
+  // for (const auto &required : requiredExtensions) {
+  //   std::cout << "\t" << required << std::endl;
+  //   if (available.find(required) == available.end()) {
+  //     throw std::runtime_error("Missing required glfw extension");
+  //   }
+  // }
 }
 
 bool SimEngineDevice::checkDeviceExtensionSupport(VkPhysicalDevice device) {

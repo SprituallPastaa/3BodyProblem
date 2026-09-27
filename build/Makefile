@@ -113,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /home/emilh/workspace/physics_sim/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -128,6 +129,30 @@ pastasim: cmake_check_build_system
 pastasim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/build
 .PHONY : pastasim/fast
+
+src/application.o: src/application.cpp.o
+.PHONY : src/application.o
+
+# target to build an object file
+src/application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/application.cpp.o
+.PHONY : src/application.cpp.o
+
+src/application.i: src/application.cpp.i
+.PHONY : src/application.i
+
+# target to preprocess a source file
+src/application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/application.cpp.i
+.PHONY : src/application.cpp.i
+
+src/application.s: src/application.cpp.s
+.PHONY : src/application.s
+
+# target to generate assembly for a file
+src/application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/application.cpp.s
+.PHONY : src/application.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -153,6 +178,150 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/my_engine_swap_chain.o: src/my_engine_swap_chain.cpp.o
+.PHONY : src/my_engine_swap_chain.o
+
+# target to build an object file
+src/my_engine_swap_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.o
+.PHONY : src/my_engine_swap_chain.cpp.o
+
+src/my_engine_swap_chain.i: src/my_engine_swap_chain.cpp.i
+.PHONY : src/my_engine_swap_chain.i
+
+# target to preprocess a source file
+src/my_engine_swap_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.i
+.PHONY : src/my_engine_swap_chain.cpp.i
+
+src/my_engine_swap_chain.s: src/my_engine_swap_chain.cpp.s
+.PHONY : src/my_engine_swap_chain.s
+
+# target to generate assembly for a file
+src/my_engine_swap_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/my_engine_swap_chain.cpp.s
+.PHONY : src/my_engine_swap_chain.cpp.s
+
+src/sim_engine_device.o: src/sim_engine_device.cpp.o
+.PHONY : src/sim_engine_device.o
+
+# target to build an object file
+src/sim_engine_device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.o
+.PHONY : src/sim_engine_device.cpp.o
+
+src/sim_engine_device.i: src/sim_engine_device.cpp.i
+.PHONY : src/sim_engine_device.i
+
+# target to preprocess a source file
+src/sim_engine_device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.i
+.PHONY : src/sim_engine_device.cpp.i
+
+src/sim_engine_device.s: src/sim_engine_device.cpp.s
+.PHONY : src/sim_engine_device.s
+
+# target to generate assembly for a file
+src/sim_engine_device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_engine_device.cpp.s
+.PHONY : src/sim_engine_device.cpp.s
+
+src/sim_model.o: src/sim_model.cpp.o
+.PHONY : src/sim_model.o
+
+# target to build an object file
+src/sim_model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_model.cpp.o
+.PHONY : src/sim_model.cpp.o
+
+src/sim_model.i: src/sim_model.cpp.i
+.PHONY : src/sim_model.i
+
+# target to preprocess a source file
+src/sim_model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_model.cpp.i
+.PHONY : src/sim_model.cpp.i
+
+src/sim_model.s: src/sim_model.cpp.s
+.PHONY : src/sim_model.s
+
+# target to generate assembly for a file
+src/sim_model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_model.cpp.s
+.PHONY : src/sim_model.cpp.s
+
+src/sim_pipeline.o: src/sim_pipeline.cpp.o
+.PHONY : src/sim_pipeline.o
+
+# target to build an object file
+src/sim_pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.o
+.PHONY : src/sim_pipeline.cpp.o
+
+src/sim_pipeline.i: src/sim_pipeline.cpp.i
+.PHONY : src/sim_pipeline.i
+
+# target to preprocess a source file
+src/sim_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.i
+.PHONY : src/sim_pipeline.cpp.i
+
+src/sim_pipeline.s: src/sim_pipeline.cpp.s
+.PHONY : src/sim_pipeline.s
+
+# target to generate assembly for a file
+src/sim_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_pipeline.cpp.s
+.PHONY : src/sim_pipeline.cpp.s
+
+src/sim_renderer.o: src/sim_renderer.cpp.o
+.PHONY : src/sim_renderer.o
+
+# target to build an object file
+src/sim_renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_renderer.cpp.o
+.PHONY : src/sim_renderer.cpp.o
+
+src/sim_renderer.i: src/sim_renderer.cpp.i
+.PHONY : src/sim_renderer.i
+
+# target to preprocess a source file
+src/sim_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_renderer.cpp.i
+.PHONY : src/sim_renderer.cpp.i
+
+src/sim_renderer.s: src/sim_renderer.cpp.s
+.PHONY : src/sim_renderer.s
+
+# target to generate assembly for a file
+src/sim_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_renderer.cpp.s
+.PHONY : src/sim_renderer.cpp.s
+
+src/sim_window.o: src/sim_window.cpp.o
+.PHONY : src/sim_window.o
+
+# target to build an object file
+src/sim_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_window.cpp.o
+.PHONY : src/sim_window.cpp.o
+
+src/sim_window.i: src/sim_window.cpp.i
+.PHONY : src/sim_window.i
+
+# target to preprocess a source file
+src/sim_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_window.cpp.i
+.PHONY : src/sim_window.cpp.i
+
+src/sim_window.s: src/sim_window.cpp.s
+.PHONY : src/sim_window.s
+
+# target to generate assembly for a file
+src/sim_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pastasim.dir/build.make CMakeFiles/pastasim.dir/src/sim_window.cpp.s
+.PHONY : src/sim_window.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +331,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... pastasim"
+	@echo "... src/application.o"
+	@echo "... src/application.i"
+	@echo "... src/application.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/my_engine_swap_chain.o"
+	@echo "... src/my_engine_swap_chain.i"
+	@echo "... src/my_engine_swap_chain.s"
+	@echo "... src/sim_engine_device.o"
+	@echo "... src/sim_engine_device.i"
+	@echo "... src/sim_engine_device.s"
+	@echo "... src/sim_model.o"
+	@echo "... src/sim_model.i"
+	@echo "... src/sim_model.s"
+	@echo "... src/sim_pipeline.o"
+	@echo "... src/sim_pipeline.i"
+	@echo "... src/sim_pipeline.s"
+	@echo "... src/sim_renderer.o"
+	@echo "... src/sim_renderer.i"
+	@echo "... src/sim_renderer.s"
+	@echo "... src/sim_window.o"
+	@echo "... src/sim_window.i"
+	@echo "... src/sim_window.s"
 .PHONY : help
 
 
@@ -176,6 +366,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/emilh/workspace/physics_sim/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
